@@ -1,0 +1,47 @@
+model:
+  detection_config: "mmdetection/configs/yolox/yolox_s_8xb8-300e_coco.py"
+  detection_checkpoint: "checkpoints/mmdet/yolox/yolox_s_8x8_300e_coco_20211121_095711-4592a793.pth"
+  pose_config: "mmpose/configs/body_2d_keypoint/topdown_heatmap/coco/td-hm_hrnet-w32_8xb64-210e_coco-256x192.py"
+  pose_checkpoint: "checkpoints/mmpose/hrnet/hrnet_w32_coco_256x192-c78dce93_20200708.pth"
+  device: "cpu"
+
+examples_folder: "data/examples/inputs"
+
+visualization:
+  skeleton:
+    - !!python/tuple [0, 1]
+    - !!python/tuple [0, 2]
+    - !!python/tuple [1, 3]
+    - !!python/tuple [2, 4]
+    - !!python/tuple [5, 6]
+    - !!python/tuple [5, 7]
+    - !!python/tuple [5, 11]
+    - !!python/tuple [6, 8]
+    - !!python/tuple [6, 12]
+    - !!python/tuple [7, 9]
+    - !!python/tuple [8, 10]
+    - !!python/tuple [11, 12]
+    - !!python/tuple [11, 13]
+    - !!python/tuple [12, 14]
+    - !!python/tuple [13, 15]
+    - !!python/tuple [14, 16]
+  box_color: !!python/tuple [255, 0, 0]
+  skeleton_color: !!python/tuple [255, 255, 255]
+  keypoint_color:
+    - !!python/tuple [255, 0, 0]
+    - !!python/tuple [255, 127, 0]
+    - !!python/tuple [255, 127, 0]
+    - !!python/tuple [255, 255, 0]
+    - !!python/tuple [255, 255, 0]
+    - !!python/tuple [0, 255, 0]
+    - !!python/tuple [0, 255, 0]
+    - !!python/tuple [0, 255, 255]
+    - !!python/tuple [0, 255, 255]
+    - !!python/tuple [0, 0, 255]
+    - !!python/tuple [0, 0, 255]
+    - !!python/tuple [127, 0, 255]
+    - !!python/tuple [127, 0, 255]
+    - !!python/tuple [255, 0, 255]
+    - !!python/tuple [255, 0, 255]
+    - !!python/tuple [255, 0, 127]
+    - !!python/tuple [255, 0, 127]

@@ -1,0 +1,32 @@
+# gpu
+# --extra-index-url https://download.pytorch.org/whl/cu116
+# torch==1.13.0+cu116
+# torchvision==0.14.0+cu116
+# --find-links https://download.openmmlab.com/mmcv/dist/cu116/torch1.13/index.html
+# mmcv==2.0.0rc3
+
+# cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==1.13.0+cpu
+torchvision==0.14.0+cpu
+--find-links https://download.openmmlab.com/mmcv/dist/cpu/torch1.13/index.html
+mmcv==2.0.0rc3
+
+mmengine==0.4.0
+# mmdet==3.0.0rc5
+# git clone -b v3.0.0rc5 https://github.com/open-mmlab/mmdetection.git && pip install --no-cache-dir -e mmdetection/
+# mmpose==1.0.0rc0
+# git clone -b v1.0.0rc0 https://github.com/open-mmlab/mmpose.git && pip install --no-cache-dir -e mmpose/
+
+numpy==1.23.0
+opencv-python==4.7.0.68
+ffmpeg-python==0.2.0
+Pillow==9.4.0
+PyYAML==6.0
+
+gradio==3.15.0
+uvicorn==0.20.0
+fastapi==0.88.0
+pydantic==1.10.4
+python-multipart==0.0.5
+aiofiles==22.1.0
